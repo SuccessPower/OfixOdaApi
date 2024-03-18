@@ -1,0 +1,6 @@
+@OfixOdaApi_HostAddress = http://localhost:5279
+
+GET {{OfixOdaApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
