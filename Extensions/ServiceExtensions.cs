@@ -1,4 +1,7 @@
-﻿namespace OfixOdaApi.Extensions
+﻿using Contracts.Interface;
+using LoggerService.Implementation;
+
+namespace OfixOdaApi.Extensions
 {
 		public static class ServiceExtensions
 		{
@@ -28,5 +31,7 @@
 
 						});
 
+				public static void ConfigureLoggerService(this IServiceCollection services) => 
+				services.AddSingleton<ILoggerManager, LoggerManager>();
 		}
 }
